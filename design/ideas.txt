@@ -95,3 +95,15 @@
 ▼
 [End]
 
+
+
+
+
+
+Weeks 1-3: Log collection from key sources
+
+Weeks 4-6: Preprocessing and basic classification
+
+Weeks 7-9: Alert prioritization and storage
+
+Weeks 10-12: UI and testing
