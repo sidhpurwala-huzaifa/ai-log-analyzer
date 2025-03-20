@@ -1,1 +1,109 @@
-Add your ideas here
+[Start]
+│
+▼
+[Fedora Log Sources]
+├─ SELinux → audit.log
+├─ systemd → journalctl
+├─ Auditd → audit/audit.log
+└─ Custom Apps → /var/log/
+│
+▼
+[Bash Collection Layer]
+├─ journalctl Wrapper Script
+├─ inotifywait File Monitor
+├─ Rsyslog Hook
+└─ Output → JSON Stream
+│
+▼
+[Preprocessing Engine]
+├─ Format Normalization
+├─ Field Extraction (REGEX)
+├─ Noise Reduction
+├─ Feature Engineering
+└─ Output → Structured Data
+│
+▼
+[Hybrid AI Analysis]
+├─ ➊ Traditional ML Path:
+│   ├─ Scikit-learn Models
+│   ├─ PyTorch/TF Models
+│   └─ Confidence Scoring
+│
+├─ ➋ LLM Enhancement Path (Low Confidence):
+│   ├─ Security-BERT Analysis
+│   ├─ MITRE ATT&CK Mapping
+│   └─ Human Feedback Capture
+│
+└─ Output → Labeled Alerts + SHAP Explanations
+│
+▼
+[Priority Engine]
+├─ Rule-Based Filtering
+├─ Temporal Correlation
+├─ MITRE TTP Mapping
+├─ Threat Scoring (CVSS-like)
+└─ Output → Prioritized Queue
+│
+▼
+[Storage & Export]
+├─ SQLite (Default)
+├─ Elasticsearch (Optional)
+├─ SIEM Export (Splunk/ELK)
+└───┤
+    ▼
+[Admin Interface]
+├─ CLI Dashboard
+├─ Real-time Monitoring
+├─ Alert Investigation:
+│   ├─ Raw Logs
+│   ├─ ML Explanations
+│   └─ MITRE Context
+├─ False Positive Reporting
+└─ Output → Actions/Reports
+│
+▼
+[Feedback Loop]
+├─ Human Validation
+├─ Active Learning
+├─ Model Retraining
+└─ SELinux Policy Updates
+│
+▼
+[Packaging & Deployment]
+├─ RPM SPEC File:
+│   ├─ Requires: python3-torch, scikit-learn
+│   └─ systemd Service File
+├─ SELinux Policy Bundle
+└─ Fedora Copr Build Integration
+│
+▼
+[Testing & Validation]
+├─ Unit/Integration Tests
+├─ Performance Benchmarks:
+│   ├─ 4-core CPU/8GB RAM
+│   └─ 1000 EPS Throughput
+├─ Fedora Version Matrix
+└─ Security Audit
+│
+▼
+[Documentation]
+├─ Installation Guide
+├─ API Reference
+├─ MITRE Mappings Cheatsheet
+└─ Contributor Docs
+│
+▼
+[End]
+
+
+
+
+
+
+Weeks 1-3: Log collection from key sources
+
+Weeks 4-6: Preprocessing and basic classification
+
+Weeks 7-9: Alert prioritization and storage
+
+Weeks 10-12: UI and testing
