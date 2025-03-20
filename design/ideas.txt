@@ -1,1 +1,94 @@
-Add your ideas here
+# AI Log Analyzer Design Document
+
+### Author: Rohan
+
+## Overview
+
+I am a student specializing in Artificial Intelligence and am passionate about learning and contributing to open-source projects. Everything I am about to present here is based on my independent research from online resources. I am eager to refine and redirect my efforts based on feedback and guidance, and I just need an opportunity to prove myself.
+
+While I am relatively new to Machine Learning and open-source development, I am learning quickly and have made significant progress in the last few weeks. I am eager to apply my skills to real-world problems and contribute to the Fedora community.
+
+As a Fedora user for the past year, I have encountered common issues such as Bluetooth disconnections, fingerprint scanner failures, slow application launches, and theme inconsistencies. I want to design this model to troubleshoot these minor but daily-life-impacting bugs automatically.
+
+The goal of the AI Log Analyzer is to automatically detect and troubleshoot these and other anomalies by analyzing system logs and providing actionable solutions.
+
+This tool aims to assist Fedora users by identifying system-level anomalies (security breaches, crashes, network issues, etc.) and providing remediation steps. The project is user-centric, targeting real-world issues Fedora users face daily, with potential for modular expansion to other Linux distributions.
+
+## Project Workflow
+
+1. **Log Collection**
+   - Source logs from journalctl, dmesg, system logs, and other Fedora logging tools.
+   - Fetch logs related to kernel events, user sessions, network activities, and hardware failures.
+
+2. **Preprocessing**
+   - Parse and clean the logs using Python (regex, pandas).
+   - Normalize log formats, handle missing values, and extract structured information (timestamp, severity, event type, service name).
+   - Use NLP techniques like tokenization and embedding to prepare logs for AI models.
+
+3. **Anomaly Detection**
+   - Train and deploy a combination of models:
+     - **Isolation Forest** for less dense anomalies (e.g., occasional hardware failures, one-off crashes).
+     - **Autoencoders** for pattern reconstruction.
+     - **Variational Autoencoders (VAE)** for probabilistic anomalies.
+     - **LSTM-based Autoencoders** for sequential dependencies in time-series logs.
+     - **DBSCAN** for dense anomalies (e.g., repeated network failures, frequent authentication errors).
+
+4. **AI Inference & Scoring**
+   - Score each log entry and event.
+   - Mark events with anomaly scores above thresholds as incidents.
+
+5. **Troubleshooting Engine**
+   - Map detected anomalies to suggested solutions.
+   - Automate common fixes like restarting services, reloading drivers, or clearing corrupted cache.
+   - Implement this via bash scripts or systemd service calls.
+
+6. **Output Layer**
+   - Generate human-readable reports.
+   - Provide real-time notifications (e.g., system tray popups or command-line alerts).
+   - Allow integration with Fedora's GNOME desktop for GUI-based troubleshooting tips.
+
+## AI/ML Models Planned
+
+### For less dense anomalies:
+- **Isolation Forest**
+  - Efficient for sparse, high-dimensional logs.
+
+### For dense anomalies:
+- **Autoencoders**
+  - Detect unusual patterns by reconstructing logs.
+
+- **Variational Autoencoders (VAEs)**
+  - Capture deeper data distributions.
+
+- **LSTM-based Autoencoders**
+  - Handle sequential log data effectively.
+
+- **DBSCAN**
+  - Unsupervised clustering to detect outliers in highly repetitive or correlated logs.
+
+### Notes on Anomaly Density:
+- **Less dense anomalies**: Rare or occasional irregularities such as a one-time Bluetooth disconnect or an isolated app crash.
+- **Dense anomalies**: Frequently occurring issues like repetitive authentication failures or persistent network drops.
+
+## Tech Stack
+
+- **Python** (for data handling, model building, automation)
+- **scikit-learn**, **PyTorch**, **TensorFlow** (for ML modeling)
+- **pandas**, **NumPy** (for preprocessing)
+- **Matplotlib**, **Seaborn** (for visualizations)
+- **Bash/Shell scripting** (for automated troubleshooting)
+- **System tools:** `journalctl`, `dmesg`, `systemctl`
+- **Fedora Workstation** as the primary OS for testing.
+
+## Model Strategy
+
+We will use pre-existing models (e.g., Isolation Forest, Autoencoders, LSTM-based Autoencoders) and adapt them to Fedora-specific log patterns. The project focuses on tuning and integrating these models into a complete anomaly detection and troubleshooting system.
+
+## Additional Notes
+
+- The technical direction is based on my research and current learning progress.
+- I am committed to contributing and improving based on feedback from the Fedora community.
+- I am passionate about solving Fedora user pain points using AI, and I am dedicated to making this project a success.
+
+
+
