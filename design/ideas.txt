@@ -1,19 +1,3 @@
- AI Log Analyzer Design Document
-
- Author: Rohan
-
- Overview:
-
-I am a student specializing in Artificial Intelligence and am passionate about learning and contributing to open-source projects. Everything I am about to present here is based on my independent research from online resources. I am eager to refine and redirect my efforts based on feedback and guidance, and I just need an opportunity to prove myself.
-
-While I am relatively new to Machine Learning and open-source development, I am learning quickly and have made significant progress in the last few weeks. I am eager to apply my skills to real-world problems and contribute to the Fedora community.
-
-As a Fedora user for the past year, I have encountered common issues such as Bluetooth disconnections, fingerprint scanner failures, slow application launches, and theme inconsistencies. I want to design this model to troubleshoot these minor but daily-life-impacting bugs automatically.
-
-The goal of the AI Log Analyzer is to automatically detect and troubleshoot these and other anomalies by analyzing system logs and providing actionable solutions.
-
-This tool aims to assist Fedora users by identifying system-level anomalies (security breaches, crashes, network issues, etc.) and providing remediation steps. The project is user-centric, targeting real-world issues Fedora users face daily, with potential for modular expansion to other Linux distributions.
-
 Project Workflow:
 
 1. Log Collection:
@@ -84,11 +68,7 @@ Model Strategy:
 
 We will use pre-existing models (e.g., Isolation Forest, Autoencoders, LSTM-based Autoencoders) and adapt them to Fedora-specific log patterns. The project focuses on tuning and integrating these models into a complete anomaly detection and troubleshooting system.
 
- Additional Notes:
 
-- The technical direction is based on my research and current learning progress.
-- I am committed to contributing and improving based on feedback from the Fedora community.
-- I am passionate about solving Fedora user pain points using AI, and I am dedicated to making this project a success.
 
 
 
