@@ -3,6 +3,8 @@
 ## Executive Summary
 This project proposes an efficient, lightweight AI-powered log triage system designed specifically for Fedora. It aggregates logs from various system sources, normalizes their formats, and employs machine learning models to classify and prioritize security events. The solution ensures minimal resource consumption, making it ideal for standard laptop environments.
 
+
+
 ## System Architecture Overview
 The architecture follows a structured pipeline comprising four core components:
 
@@ -19,7 +21,9 @@ The architecture follows a structured pipeline comprising four core components:
 
 4. **Presentation Layer**:
    - Present prioritized alerts via CLI with optional email or system notifications.
+  
 
+![Screenshot 2025-03-20 at 11 36 44 PM](https://github.com/user-attachments/assets/8c1eb57d-dc54-4304-adac-634be5a06e5b)
 ## Detailed System Architecture
 
 ### Log Ingestion & Aggregation
