@@ -28,3 +28,4 @@ ai-log-analyzer/
 │
 ├── README.md                 # Project overview and instructions
 └── setup.py                  # Installation script (optional if packaging)
+![Screenshot 2025-03-20 at 11 32 57 PM](https://github.com/user-attachments/assets/9aa82871-b827-4ca4-85fb-192129e1ce4a)
