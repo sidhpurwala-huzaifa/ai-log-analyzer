@@ -1,1 +1,53 @@
-Add your ideas here
+AI Log Analyzer Design Document
+
+Author: Rohan
+
+1. Introduction:
+I am an AI specialization student and a Fedora user for over a year. My passion lies in contributing to open-source communities, particularly solving real-world Linux user issues. This document is based on independent research and is open to improvements based on community feedback. My goal is to automate the detection and troubleshooting of common Fedora issues like Bluetooth disconnections, fingerprint scanner glitches, slow app launches, and theme inconsistencies.
+
+2. Workflow Summary:
+
+2.1 Log Collection:
+- Source logs: journalctl, dmesg, system logs.
+- Focus areas: kernel events, user sessions, network activity, hardware errors.
+
+2.2 Preprocessing:
+- Tools: Python (regex, pandas).
+- Steps: Normalize logs, handle missing data, extract fields (timestamps, event types).
+- NLP: Tokenization, embeddings for model input.
+
+2.3 Anomaly Detection Models:
+- Isolation Forest: Sparse anomalies (e.g., random crashes).
+- Autoencoders: Pattern reconstruction.
+- VAE: Probabilistic anomalies.
+- LSTM Autoencoders: Sequential anomaly detection.
+- DBSCAN: Dense anomalies (e.g., frequent network errors).
+
+2.4 AI Inference & Scoring:
+- Assign anomaly scores.
+- Flag entries above threshold.
+
+2.5 Troubleshooting Engine:
+- Map issues to suggested fixes.
+- Automate actions (e.g., restart services, reload drivers).
+
+2.6 Output Layer:
+- Reports + real-time GNOME/CLI alerts.
+
+3. Tech Stack:
+- Python, scikit-learn, PyTorch, TensorFlow.
+- pandas, NumPy, Matplotlib, Seaborn.
+- Bash scripts, journalctl, dmesg, systemctl.
+- Fedora Workstation (primary testbed).
+
+4. Deployment Strategy:
+- Adapt pre-trained models to Fedora logs.
+- Integrate into a full pipeline.
+
+5. Notes:
+- Less dense = rare, isolated issues.
+- Dense = frequent, repeated issues.
+- I am committed to contributing and refining this based on feedback.
+
+Thank you for your time and consideration!
+

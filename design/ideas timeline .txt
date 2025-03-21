@@ -1,0 +1,20 @@
+12-Week GSoC Timeline :
+
+Week 1-2:
+Complete log collection and preprocessing modules, including structured extraction of key fields from system logs.
+
+Week 3-4:
+Implement and test Isolation Forest & DBSCAN models for basic anomaly detection on collected logs.
+
+Week 5-6:
+Integrate Autoencoder and Variational Autoencoder (VAE) models for deeper anomaly detection; enhance scoring pipeline.
+
+Week 7-8:
+Develop troubleshooting engine to automate fixes (e.g., restarting services, clearing cache) based on detected anomalies.
+
+Week 9-10:
+Build output layer to generate user-friendly reports and real-time notifications via GNOME desktop integration.
+
+Week 11-12:
+Conduct end-to-end testing, performance evaluation, documentation, and finalize deliverables for submission.
+
