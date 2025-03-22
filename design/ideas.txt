@@ -2,7 +2,8 @@ Add your ideas here
 
 1. Introduction
 The AI-Powered Log Analyzer is designed to intelligently classify, analyze, and troubleshoot system logs using hybrid AI techniques. 
-It integrates regex-based classification, machine learning (ML), and large language models (LLMs) for adaptive log processing, real-time severity scoring, and automated remediation. This system will improve system stability, detect anomalies early, and provide actionable solutions.
+It integrates regex-based classification, machine learning (ML), and large language models (LLMs) for adaptive log processing, real-time severity scoring, and
+automated remediation. This system will improve system stability, detect anomalies early, and provide actionable solutions.
 
 2. Workflow Overview
 The workflow follows a structured pipeline with three levels of classification, real-time anomaly detection, and severity-based alerts.
