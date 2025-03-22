@@ -10,7 +10,7 @@ The workflow follows a structured pipeline with three levels of classification, 
 
 Step 1: Log Message Ingestion
 - Logs collected from:
-  - journalctl, dmesg, syslog, and other system log sources.
+  - SELinux, systemd journal, audit logs and other system log sources.
   - Application logs and security logs.
   - Network and kernel logs.
 - Log messages are tokenized and preprocessed (removing noise, structuring data).
